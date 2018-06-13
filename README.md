@@ -32,7 +32,7 @@ npm install
 
 #### 3.修改Bmob SDK,初始化
 
-* 修改`/src/main.js`文件中的
+* 修改`/src/main.js`文件，此处的应用Appkey，Resetkey，可以上Bmob后端云官网购买源码即可生成应用，包含数据库，源码免费，生成的应用免费，当然有需要的可以升级应用套餐，Bmob后端云官网：https://www.bmob.cn
 
 ```
 import Bmob from '../static/bmob/Bmob-1.4.4.min.js'
