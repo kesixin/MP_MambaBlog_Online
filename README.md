@@ -21,6 +21,8 @@
 
 ## 安装教程
 
+#### 源码地址：https://github.com/kesixin/MP_MambaBlog_Online
+
 #### 1.克隆源代码
 
 ```
