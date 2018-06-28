@@ -1,0 +1,136 @@
+/*底部加载提示*/
+.weui-loadmore_line {
+    border-top:1px solid #E5E5E5;
+    margin-top:2.4em;
+}
+.weui-loadmore {
+
+    width:65%;
+    margin:1.5em auto;
+    line-height:1.6em;
+    font-size:14px;
+    text-align:center;
+
+}
+.weui-loadmore__tips_in-line {
+    position: relative;
+    top: -0.9em;
+    padding: 0 .55em;
+    background-color: #FFFFFF;
+    color: #999999;
+}
+.weui-loadmore__tips {
+    display:inline-block;
+    vertical-align:middle;
+}
+/*底部加载提示*/
+
+/*收藏-消息*/
+.collect {
+    font-size: 25px;
+    color: #41C4FF;
+    float: left;
+    margin-right: 15px;
+    width: 7%;
+    height: 100px;
+}
+
+.collect-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.zan-font-12 {
+    font-size: 12px;
+}
+
+.zan-c-gray-dark {
+    color: #999 !important;
+}
+
+.zan-panel-box {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.zan-font-14 {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #000000;
+}
+/*收藏-消息*/
+
+/*博文列表图标*/
+@font-face{
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?29mqfn');
+    src:  url('../fonts/icomoon.eot?29mqfn#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?29mqfn') format('truetype'),
+    url('../fonts/icomoon.woff?29mqfn') format('woff'),
+    url('../fonts/icomoon.svg?29mqfn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"]{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.icon-price-tags:before{
+    content: "\e936";
+}
+.icon-money:before{
+    content: "\e93e";
+}
+.icon-clock:before{
+    content: "\e94e";
+}
+.icon-user:before{
+    content: "\e971";
+}
+.icon-eye:before{
+    content: "\e9ce";
+}
+.icon-cross:before{
+    content: "\ea0f";
+}
+.icon-sina-weibo:before{
+    content: "\ea9a";
+}
+/*博文列表图标*/
+
+/*wxParse*/
+.wxParse {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif !important;
+    color: #24292e !important;
+    font-size: 15px;
+}
+
+.wxParse .pre {
+    background:#f6f8fa !important;
+    padding: 16px !important;
+    overflow: scroll;
+    white-space: pre !important;
+    border-radius: 3px;
+}
+
+.wxParse .code {
+    background: #f6f8fa !important
+}
+
+.wxParse .pre, .wxParse .tt, .wxParse .code, .wxParse .kbd, .wxParse .samp {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif !important;
+}
+/*wxParse*/
