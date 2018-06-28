@@ -24,7 +24,9 @@
 #### 1.克隆源代码
 
 ```
-git clone git@github.com:kesixin/MP_Mamba_Blog.git
+git clone git@github.com:kesixin/MP_MambaBlog_Online.git 
+或
+git clone https://github.com/kesixin/MP_MambaBlog_Online.git
 ```
 
 #### 2.安装依赖
