@@ -1,5 +1,7 @@
+## 如果本项目对您有帮助，欢迎点击Star一下！！！
+
 ## 项目简介
-项目还在开发阶段，简单版可以查看 https://github.com/kesixin/MP_MambaBlog_Online， 这是一个个人博客小程序版，使用 [Mpvue](https://github.com/Meituan-Dianping/mpvue) 编写而成，服务端使用的是Bmob后端云，无需开发服务端接口即可使用，快速便捷，适合个人使用。后续将继续迭代功能，欢迎提建议和意见。
+这是一个个人博客小程序版，使用 [Mpvue](https://github.com/Meituan-Dianping/mpvue) 编写而成，服务端使用的是Bmob后端云，无需开发服务端接口即可使用，快速便捷，适合个人使用，功能包括签到，收藏文章，查看文章，消息通知，评论文章，回复评论等。欢迎提建议和意见。
 
 
 ## 效果图
@@ -9,6 +11,9 @@
   <img src="https://upload-images.jianshu.io/upload_images/6673460-9be2408e695d8397.png" width="40%"/>
   <img src="https://upload-images.jianshu.io/upload_images/6673460-90890b3dba614a46.png" width="40%" />
   <img src="https://upload-images.jianshu.io/upload_images/6673460-8803dd1647422fae.png" width="40%" />
+  <img src="https://upload-images.jianshu.io/upload_images/6673460-ba66c961c6303069.jpg" width="40%" />
+  <img src="https://upload-images.jianshu.io/upload_images/6673460-b850dd2092d2904c.jpg" width="40%" />
+  
 </p>
 
 
@@ -18,10 +23,14 @@
 
 ## 安装教程
 
+#### 源码地址：https://github.com/kesixin/MP_MambaBlog_Online
+
 #### 1.克隆源代码
 
 ```
-git clone git@github.com:kesixin/MP_Mamba_Blog.git
+git clone git@github.com:kesixin/MP_MambaBlog_Online.git 
+或
+git clone https://github.com/kesixin/MP_MambaBlog_Online.git
 ```
 
 #### 2.安装依赖
