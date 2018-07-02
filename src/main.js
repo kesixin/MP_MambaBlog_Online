@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import Bmob from '../static/bmob/Bmob-1.4.4.min.js'
-Bmob.initialize("49d58f274ccd7d1a9bbf75b011da2798", "0914e7d2e4950d46003874ee1056270e");
+Bmob.initialize("Application ID", "REST API Key");
 
 Vue.config.productionTip = false
 App.mpType = 'app'
