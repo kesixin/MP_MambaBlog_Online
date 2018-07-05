@@ -61,13 +61,20 @@ export function getNewsList() {
  */
 export function changeStatus(id) {
     const query = Bmob.Query('news');
-    query.set('id',id) //需要修改的objectId
-    query.set('status', 'true')
-    return query.save().then(res => {
+    return query.get(id).then(res =>{
+        res.set('status','true');
+        res.save();
         return Promise.resolve(res);
-    }).catch(err => {
-        console.log(err)
+    }).catch(err =>{
+        console.log(err);
     })
+    // query.set('objectId',id) //需要修改的objectId
+    // query.set('status', 'true')
+    // return query.save().then(res => {
+    //     return Promise.resolve(res);
+    // }).catch(err => {
+    //     console.log(err)
+    // })
 }
 
 /**

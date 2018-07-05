@@ -68,7 +68,7 @@ export function getArticleByCategory(category) {
     if(category != 0){
         query.equalTo("category","==",category);
     }
-
+    query.order("-createdAt");
     return query.find().then(res=>{
         return Promise.resolve(res);
     }).catch(err=>{

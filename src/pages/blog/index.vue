@@ -125,6 +125,7 @@
                             })
                         })
                         if (data.length) {
+
                             let articles = this.articles;//得到页面上已经渲染的数据
                             let pagination = this.pagination;
                             articles.push.apply(articles, data);//将页面上的数据和最新获取到的数据合并
@@ -134,6 +135,7 @@
                             this.pagination = pagination;
                             this.loading = true;
                         } else {
+
                             this.nodata = false;
                             this.loading = true;
                         }

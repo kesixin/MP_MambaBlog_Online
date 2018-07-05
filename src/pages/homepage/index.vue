@@ -14,16 +14,16 @@
             <h1 class="description">Mamba Blog</h1>
             <ul class="tab">
                 <li class="tab-item">
-                    <span class="tab-link">技术</span>
+                    <span class="tab-link">Web:www.mambaxin.com</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">生活</span>
+                    <span class="tab-link">QQ:462369233</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">吐槽</span>
+                    <span class="tab-link">GitHub:kesixin / Mamba</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">梦想</span>
+                    <span class="tab-link">千里之行 始于足下</span>
                 </li>
             </ul>
         </div>

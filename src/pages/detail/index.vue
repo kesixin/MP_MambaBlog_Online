@@ -223,7 +223,7 @@
                             let modelData = {
                                 "touser":this.openid,//openid
                                 "template_id":"DR77s7IodDr0gN6JOcIElkCWazrxxmpNoZLgjIzQEiI",//模板id
-                                "page":"/pages/detail/main?id="+this.$root.$mp.query.id,//跳转页面
+                                "page":"pages/detail/main?id="+this.$root.$mp.query.id,//跳转页面
                                 "form_id": this.formID,//表单FormID
                                 //模板内容
                                 "data":{
