@@ -160,6 +160,10 @@
             /* 按照分类请求博文数据 */
             selectCategory(category){
                 getArticleByCategory(category).then((res) => {
+                    res.forEach((resEach) => {
+                        resEach.createdAt = timeago().format(resEach.createdAt, 'zh_CN');//格式化时间
+                    })
+                    this.nodata = false;
                     this.articles = res;
                     this.selectType = category;
                 })
