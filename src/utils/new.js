@@ -43,6 +43,8 @@ export function sendNew(action,content,user,id) {
  * @returns {Promise.<T>}
  */
 export function getNewsList() {
+    var userData = wx.getStorageSync('userData');
+    console.log(userData.objectId);
     const query = Bmob.Query('news');
     query.equalTo('user','==',userData.objectId);
     query.equalTo('status',"==",'false');
@@ -82,6 +84,7 @@ export function changeStatus(id) {
  * @returns {Promise.<T>}
  */
 export function getNewsCount() {
+    var userData = wx.getStorageSync('userData');
     console.log(userData.objectId);
     const query = Bmob.Query('news');
     query.equalTo('status','==','false');

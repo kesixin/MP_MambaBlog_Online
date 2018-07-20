@@ -147,7 +147,7 @@
             return {
                 authorize: true,
                 loading: false,
-                userData: [],
+                userData: wx.getStorageSync('userData'),
                 sign: false,
                 signShow: true,
                 signTime: [],
@@ -156,8 +156,12 @@
             }
         },
         mounted(){
+            console.log(this.userData.objectId);
             this._getUserData();
-            this._getNewsCount();
+            if(this.userData.objectId){
+                this._getNewsCount();
+            }
+
         },
         methods: {
             //授权获取用户信息
@@ -187,10 +191,8 @@
                                         res.set('nickName', nickName);
                                         res.set('userPic', avatarUrl);
                                         res.save();
-                                        var userData = wx.getStorageSync('userData');
-                                        userData['nickName'] = nickName;
-                                        userData['userPic'] = avatarUrl;
                                         that.authorize = true;
+                                        var userData = {'nickName':nickName,'userPic':avatarUrl,'objectId':objectId,'authData':current.authData};
                                         that.userData = userData;
                                         wx.setStorageSync('userData',userData);
                                     }).catch(err => {
@@ -219,6 +221,10 @@
                     });
                 } else {
                     that.userData = userData;
+                }
+
+                if(this.userData.objectId){
+
                 }
 
                 var query = Bmob.Query("sign");

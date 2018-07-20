@@ -14,7 +14,7 @@ var userData = wx.getStorageSync('userData');
  * @returns {Promise.<T>}
  */
 export function getIsCollect(id) {
-
+    var userData = wx.getStorageSync('userData');
     const query = Bmob.Query('collect');
     query.equalTo('article','==',id);
     query.equalTo('user','==',userData.objectId);
@@ -32,6 +32,7 @@ export function getIsCollect(id) {
  * @returns {*}
  */
 export function collectAction(id,action) {
+    var userData = wx.getStorageSync('userData');
     const query = Bmob.Query('collect');
     if(action == 'noCollect'){
         query.equalTo('article','==',id);
@@ -63,6 +64,7 @@ export function collectAction(id,action) {
  * @returns {Promise.<T>}
  */
 export function getCollectList() {
+    var userData = wx.getStorageSync('userData');
     const query = Bmob.Query("collect");
     query.equalTo('user','==',userData.objectId);
     query.include('article','article');
