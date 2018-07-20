@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="page-tail">
-                    <block v-if="userData">
+                    <block v-if="userData.nickName">
                         <form @submit="submit" report-submit='true'>
                             <div class="resp-input-cell">
                                 <input class="resp-input" v-model="message" type="text" placeholder="说点什么吧..."

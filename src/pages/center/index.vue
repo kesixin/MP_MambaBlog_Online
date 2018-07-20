@@ -168,10 +168,10 @@
                     success: () => {
 
                         let current = Bmob.User.current();
-                        console.log(current.nickName);
-                        if (current.nickName != undefined) {
-
-                        } else {
+                        console.log(current);
+//                        if (current.nickName != undefined) {
+//
+//                        } else {
                             wx.getUserInfo({
                                 success: (result) => {
                                     that.authorize = false;
@@ -192,13 +192,16 @@
                                         userData['userPic'] = avatarUrl;
                                         that.authorize = true;
                                         that.userData = userData;
+                                        wx.setStorageSync('userData',userData);
                                     }).catch(err => {
                                         console.log(err)
                                     })
 
+
+
                                 }
                             })
-                        }
+//                        }
                     }
                 })
             },
@@ -271,6 +274,7 @@
             },
             _getNewsCount(){
                 getNewsCount().then((res)=>{
+                    console.log(res);
                    this.noReadNewsCount=res;
                 });
             }

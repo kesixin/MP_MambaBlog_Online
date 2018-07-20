@@ -82,6 +82,7 @@ export function changeStatus(id) {
  * @returns {Promise.<T>}
  */
 export function getNewsCount() {
+    console.log(userData.objectId);
     const query = Bmob.Query('news');
     query.equalTo('status','==','false');
     query.equalTo('user','==',userData.objectId);
