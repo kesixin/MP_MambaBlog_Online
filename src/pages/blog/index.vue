@@ -65,11 +65,13 @@
                     <div class="weui-loadmore weui-loadmore_line" v-if="!nodata">
                         <view class="weui-loadmore__tips weui-loadmore__tips_in-line">已加载完</view>
                     </div>
+                    <div v-if="!nodata">
+                        <ad unit-id="adunit-852c2a9f307eadfb"></ad>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </template>
 
 <script>

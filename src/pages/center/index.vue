@@ -122,6 +122,7 @@
                         <span>关于本程序</span>
                     </div>
                     <div class="zan-cell-bottom"></div>
+                    <ad unit-id="adunit-aba321f1cebf7f0b"></ad>
                 </div>
                 <div class="zan-panel zan-panel-bottom"></div>
             </div>
